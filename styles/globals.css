@@ -1,16 +1,113 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-container {
+    @apply flex justify-between w-full fixed top-0 left-0 items-center h-20 px-24 bg-transparent z-10;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.nav-change {
+    @apply flex justify-between w-full fixed top-0 left-0 items-center h-20 px-24 bg-[#0d0d0d] z-10;
 }
 
-* {
-  box-sizing: border-box;
+.nav-change-home {
+    @apply flex justify-between w-full sticky top-0 left-0 items-center h-20 px-24 bg-[#0d0d0d] z-10;
+}
+
+.nav-animate {
+    @apply cursor-pointer hover:animate-bounce text-white no-underline hover:text-[#FFAC12] p-4 ;
+}
+
+/* *End nav */
+
+.drop-open {
+    @apply text-center  w-full h-full fixed top-0 bg-[#0d0d0d] text-white z-20;
+}
+
+.drop-items {
+    @apply duration-300 text-white no-underline hover:text-[#FFAC12] z-20;
+}
+
+/* *End dropdownMenu */
+
+#hero-fade {
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.1)), url('/Hero.svg') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.country-contain {
+    @apply grid justify-items-center grid-cols-1 mx-16 gap-4 sm:grid-cols-2 sm:gap-x-2 lg:grid-cols-3 xl:grid-cols-4 xl:w-[79rem] xl:m-auto xl:h-[40rem] xl:py-24 ;
+}
+
+.country-items {
+    @apply relative cursor-pointer w-[17.3rem] h-[26.6rem] rounded-[1.62rem] overflow-hidden;
+}
+
+.country-h1 {
+    @apply absolute font-bold text-[1.5rem] tracking-widest top-16 left-[5.5rem];
+}
+/* *End country */
+
+.hero-container {
+    @apply flex text-white items-center pl-[5rem]  w-screen h-screen bg-no-repeat;
+}
+.hero-h1 {
+    @apply font-bold text-4xl w-[15rem] sm:w-[19rem] sm:text-5xl md:text-7xl md:w-[35rem] xl:text-8xl xl:w-[45rem] leading-tight;
+}
+
+.hero-p {
+    @apply mt-9 w-[13rem] h-[7rem] leading-[1.75rem] sm:w-[26rem] text-slate-300;
+}
+
+/* *End hero */
+
+.footer-container {
+    @apply flex  flex-col justify-between  bg-[#101522] text-white;
+}
+
+.footer-wrapper {
+    @apply grid mx-auto grid-cols-2 mt-8 h-96 lg:grid-cols-4;
+}
+
+.footer-items {
+    @apply flex flex-col  px-[3.3rem]  leading-8 lg:leading-[2.5rem];
+}
+
+.footer-bottom {
+    @apply mt-[5rem] mb-[5rem] leading-10 text-center lg:mt-[-5rem];
+}
+
+.footer-socials {
+    @apply flex justify-between mx-auto w-[12rem] mt-6;
+}
+
+.footer-items a {
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+.footer-items a:hover {
+    color:#FFAC12;
+}
+
+/* *End footer */
+
+.sidebar {
+    @apply flex items-center justify-around h-24 w-full border-b-2 mb-4 ;
+}
+
+.sidebar a {
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.sidebar a:hover {
+    color:#FFAC12;
 }

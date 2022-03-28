@@ -5,17 +5,17 @@ const SideBar = () => {
     return (
         <div>
             <section className="sidebar">
-                <Link href="/CountryAll/AmericaHome/">
-                    <a>America</a>
+                <Link className='target' href="/CountryAll/AmericaHome/">
+                    <a className='target'>America</a>
                 </Link>
-                <Link href="/CountryAll/SpainHome/">
-                    <a>Spain</a>
+                <Link className='target' href="/CountryAll/SpainHome/">
+                    <a className='target'>Spain</a>
                 </Link>
-                <Link href="/CountryAll/LondonHome/">
-                    <a>London</a>
+                <Link className='target' href="/CountryAll/LondonHome/">
+                    <a className='target'>London</a>
                 </Link>
-                <Link href="/CountryAll/FranceHome/">
-                    <a>France</a>
+                <Link className='target' href="/CountryAll/FranceHome/">
+                    <a className='target'>France</a>
                 </Link>
             </section>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'next/link'
+import { Link as LinkS, animateScroll as scroll } from 'react-scroll'
 
 const DropdownMenu = ({ isOpen, toggle }) => {
     return (
@@ -13,10 +13,10 @@ const DropdownMenu = ({ isOpen, toggle }) => {
                 </div>
 
                 <div className='flex pt-8 flex-col justify-around h-1/2 cursor-pointer'>
-                    <Link href="/" ><a className="drop-items"> HOME </a></Link>
-                    <Link href="/" ><a className="drop-items"> COUNTRIES </a></Link>
-                    <Link href="/" ><a className="drop-items"> REAL ESTATE </a></Link>
-                    <Link href="/" ><a className="drop-items"> CONTACT </a></Link>
+                    <LinkS onClick={toggle} to="hero-fade" ><a className="drop-items"> HOME </a></LinkS>
+                    <LinkS onClick={toggle} to="country" ><a className="drop-items"> COUNTRIES </a></LinkS>
+                    <LinkS onClick={toggle} to="america" ><a className="drop-items"> REAL ESTATE </a></LinkS>
+                    <LinkS onClick={toggle} to="footer" ><a className="drop-items"> CONTACT </a></LinkS>
                 </div>
 
             </div>

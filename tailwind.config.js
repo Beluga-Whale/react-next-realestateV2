@@ -10,7 +10,10 @@ module.exports = {
       },
       backgroundImage:{
         'hero-bg': "url('/Hero.svg')"
-      }
+      },
+      fontFamily: {
+        'kanit': ['Kanit', 'sans-serif'],
+      },
     },
   },
   plugins: [],

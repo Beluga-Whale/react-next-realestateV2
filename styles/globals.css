@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+    font-family: "Kanit";
+}
 
 .nav-container {
     @apply flex justify-between w-full fixed top-0 left-0 items-center h-20 px-24 bg-transparent z-10;
@@ -15,7 +21,7 @@
 }
 
 .nav-animate {
-    @apply cursor-pointer hover:animate-bounce text-white no-underline hover:text-[#FFAC12] p-4 ;
+    @apply cursor-pointer hover:animate-bounce  text-white no-underline hover:text-[#FFAC12] p-4;
 }
 
 /* *End nav */
@@ -101,13 +107,6 @@
     @apply flex items-center justify-around h-24 w-full border-b-2 mb-4 ;
 }
 
-.sidebar a {
-    color:black;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-.sidebar a:hover {
-    color:#FFAC12;
+.target {
+    @apply text-black font-bold text-[1.2rem] no-underline hover:text-[#FFAC12]
 }
